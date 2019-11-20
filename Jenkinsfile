@@ -17,7 +17,7 @@ node {
     println SFDC_HOST
     println CONNECTED_APP_CONSUMER_KEY
     //def toolbelt = tool 'toolbelt'
-	def toolbelt = tool 'C:\Program Files\Salesforce CLI\bin\sfdx'
+	def toolbelt = tool 'C:\\Program Files\\Salesforce CLI\\bin\\sfdx'
 
     stage('checkout source') {
         // when running in multi-branch job, one must issue this command
