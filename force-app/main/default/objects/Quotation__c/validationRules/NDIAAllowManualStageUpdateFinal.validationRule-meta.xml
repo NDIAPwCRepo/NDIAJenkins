@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDIAAllowManualStageUpdateFinal</fullName>
+    <active>true</active>
+    <description>prevent manual update of stage once it has reached final except &#39;Archive&#39;.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Final&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Recall&quot;) 
+)  ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Final&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Submitted&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Final&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Approval In Progress&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Final&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Approved&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Final&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Rejected&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Final&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;In progress&quot;)
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Final&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Not yet commenced&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>NDIAQuoteStage__c</errorDisplayField>
+    <errorMessage>Stage cant be manually updated once it has reached final. Quote can only be &#39;Archived&#39;</errorMessage>
+</ValidationRule>

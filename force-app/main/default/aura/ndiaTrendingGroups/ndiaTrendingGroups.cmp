@@ -1,0 +1,46 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global"
+    controller="NDIAChatterGroupController">
+
+    <aura:attribute name="trendingGroups" type="List" />
+    <aura:attribute name="myGroups" type="List" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <!--displaying Trending Groups -->
+    <div class="slds-box">
+        <div class="c-container">
+            <h1 class="header-bg"> <b style="margin-left:10px;">Trending Groups : </b></h1>
+            <lightning:layout>
+                <aura:iteration items="{!v.trendingGroups}" var="eachGroup">
+                    <lightning:layoutItem padding="around-small">
+                        <div class="custom-box">{!eachGroup.Name}</div>
+                    </lightning:layoutItem>
+                </aura:iteration>
+
+            </lightning:layout>
+
+
+        </div>
+
+    </div>
+    <br />
+    <!-- displaying My Groups -->
+     <div class="slds-box">
+        <div class="c-container">
+            <h1 class="header-bg"> <b style="margin-left:10px;">My Groups : </b></h1>
+            <lightning:layout>
+                <aura:iteration items="{!v.myGroups}" var="myGrp">
+                    <lightning:layoutItem padding="around-small">
+                        <div class="custom-box">{!myGrp.Name}</div>
+                    </lightning:layoutItem>
+
+                </aura:iteration>
+                
+
+            </lightning:layout>
+
+
+        </div>
+
+    </div> 
+</aura:component>

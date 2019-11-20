@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>NDIAQuote_Submission_To_NDIA_Alert</fullName>
+        <description>Quote Submission To NDIA Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>amiya.das@pwc.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>NDIA_Email_Templates/NDIAQuote_Submission_To_NDIA</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approval_Date</fullName>
+        <field>NDIAApprovalDate__c</field>
+        <formula>TODAY()</formula>
+        <name>Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Quote_Approved</fullName>
+        <field>NDIAQuoteStage__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Quote Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Quote_Recalled</fullName>
+        <field>NDIAQuoteStage__c</field>
+        <literalValue>Recall</literalValue>
+        <name>Quote Recalled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Quote_Rejected</fullName>
+        <field>NDIAQuoteStage__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Quote Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Quote_Submitted</fullName>
+        <field>NDIAQuoteStage__c</field>
+        <literalValue>Submitted</literalValue>
+        <name>Quote Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+</Workflow>

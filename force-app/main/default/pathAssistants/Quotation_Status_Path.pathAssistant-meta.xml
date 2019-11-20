@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Quotation__c</entityName>
+    <fieldName>NDIAQuoteStage__c</fieldName>
+    <masterLabel>Quotation Status Path</masterLabel>
+    <pathAssistantSteps>
+        <picklistValueName>Final</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>In progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Quote is created by SP user.&lt;/p&gt;</info>
+        <picklistValueName>Not yet commenced</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;To submit the quote please add all the mandatory data:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;NDIS number&lt;/li&gt;&lt;li&gt;NDIS participant check true&lt;/li&gt;&lt;li&gt;Mandatory documents&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>Submitted</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

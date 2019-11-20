@@ -1,0 +1,4 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global"
+    controller="NDIAArchiveQuotesController">
+
+</aura:component>

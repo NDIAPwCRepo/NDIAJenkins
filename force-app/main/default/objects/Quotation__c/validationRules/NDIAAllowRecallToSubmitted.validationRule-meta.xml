@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDIAAllowRecallToSubmitted</fullName>
+    <active>true</active>
+    <description>stage can be updated from &#39;Recall&#39; to &#39;Submitted&#39; or &#39;Archive&#39; only</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Recall&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Final&quot;) 
+)  ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Recall&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;In progress&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Recall&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Not yet commenced&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Recall&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Approval In Progress&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Recall&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Approved&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Recall&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Rejected&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>NDIAQuoteStage__c</errorDisplayField>
+    <errorMessage>Stage can only be manually updated from &#39;Recall&#39; to &#39;Submitted&#39; or &#39;Archive&#39;</errorMessage>
+</ValidationRule>

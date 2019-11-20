@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDIANDISNumberPopulated</fullName>
+    <active>true</active>
+    <description>If NDIS participant is true, customer record must have NDIS number</description>
+    <errorConditionFormula>AND( NDIANDISParticipant__c = TRUE, ISBLANK(NDIANDISNumber__c))</errorConditionFormula>
+    <errorDisplayField>NDIANDISNumber__c</errorDisplayField>
+    <errorMessage>Please provide NDIS Number for NDIS participant</errorMessage>
+</ValidationRule>

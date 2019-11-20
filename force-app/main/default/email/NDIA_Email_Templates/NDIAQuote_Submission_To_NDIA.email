@@ -1,0 +1,7 @@
+Hi {!User.FirstName},
+
+A quote has been submitted in Manage My Quotes. To view submitted quotes, please go to :-  {!Quotation__c.Link}
+
+
+Kind Regards,
+Provider Community Team

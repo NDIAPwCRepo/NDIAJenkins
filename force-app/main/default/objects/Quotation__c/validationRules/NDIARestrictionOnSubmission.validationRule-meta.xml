@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDIARestrictionOnSubmission</fullName>
+    <active>true</active>
+    <description>From &#39;Submitted&#39; stage can be manually updated to &#39;Recall / Rejected / Approved&#39; or &#39;Archive&#39;</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Submitted&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Final&quot;) 
+)  ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Submitted&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;In progress&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Submitted&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Not yet commenced&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;Submitted&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Approval In Progress&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>NDIAQuoteStage__c</errorDisplayField>
+    <errorMessage>Stage can be manually updated from &#39;Submitted&#39; to &#39;Recall / Rejected / Approved&#39; or &#39;Archive&#39;</errorMessage>
+</ValidationRule>

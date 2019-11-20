@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Archived_Quotes</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NDIAQuoteStage__c</field>
+        <operation>equals</operation>
+        <value>Archive</value>
+    </filters>
+    <label>Archived Quotes</label>
+</ListView>
