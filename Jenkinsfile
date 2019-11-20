@@ -19,7 +19,7 @@ node {
 	println '000000000000000000000000'
     def toolbelt = tool 'toolbelt'
 
-	println '111111111111111'
+	println toolbelt
 
     stage('checkout source') {
 	    println '222222222222222222'
