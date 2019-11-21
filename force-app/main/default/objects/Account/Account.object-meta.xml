@@ -230,7 +230,6 @@
     <compactLayoutAssignment>Customer_Compact_Layout</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
-    <externalSharingModel>Private</externalSharingModel>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
