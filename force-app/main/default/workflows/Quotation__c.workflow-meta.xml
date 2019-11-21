@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
+        <fullName>NDIAQuote_Assigned_To_Primary_Owner_Alert</fullName>
+        <description>Quote Assigned To Primary Owner Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>singh.arvind@pwc.com.ndiamain</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>NDIA_Email_Templates/NDIAQuote_Assigned_To_Primary_Owner</template>
+    </alerts>
+    <alerts>
         <fullName>NDIAQuote_Submission_To_NDIA_Alert</fullName>
         <description>Quote Submission To NDIA Alert</description>
         <protected>false</protected>
         <recipients>
-            <recipient>amiya.das@pwc.com</recipient>
+            <recipient>singh.arvind@pwc.com.ndiamain</recipient>
             <type>user</type>
         </recipients>
         <senderType>DefaultWorkflowUser</senderType>
