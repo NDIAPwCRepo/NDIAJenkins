@@ -237,11 +237,7 @@
         <field>Account.NDIANDISNumber__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.NDIANDISParticipant__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.NDIASuburb__c</field>
@@ -347,11 +343,7 @@
         <field>Quotation__c.NDIANDISNumber__c</field>
         <readable>false</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Quotation__c.NDIANDISParticipant__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    
     <fieldPermissions>
         <editable>false</editable>
         <field>Quotation__c.NDIANDIS_Number__c</field>

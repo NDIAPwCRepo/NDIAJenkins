@@ -7,7 +7,7 @@
 * @param <Input parameter 2>
 */
 @isTest
-public with sharing class NDIAChatterGrpTriggerHandlerTest {
+public class NDIAChatterGrpTriggerHandlerTest {
    /* public NDIAChatterGrpTriggerHandlerTest() {
 
     } */

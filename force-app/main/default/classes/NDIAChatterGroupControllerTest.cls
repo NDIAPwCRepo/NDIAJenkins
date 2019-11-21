@@ -9,12 +9,17 @@
 * @return: impLinks
 */
 @isTest
-public with sharing class NDIAChatterGroupControllerTest {
-   /* public NDIAChatterGroupControllerTest() {
+public class NDIAChatterGroupControllerTest {
+   
 
-    } */
 
     public static testmethod void testGetTrendingGroups(){
+
+        // invoking NDIATestDataFactory
+        CollaborationGroup trendingGrps = NDIATestDataFactory.createTrendingGroups();
+        insert trendingGrps;
+        system.assert(trendingGrps.Id != null);
+       // return trendingGrps;
 
         test.startTest();
         NDIAChatterGroupController.getTrendingGroups();
@@ -22,6 +27,11 @@ public with sharing class NDIAChatterGroupControllerTest {
     }
 
     public static testmethod void testGetMyGroups(){
+
+        // invoking NDIATestDataFactory
+        CollaborationGroup trendingGrps1 = NDIATestDataFactory.createMyGroups();
+        insert trendingGrps1;
+        system.assert(trendingGrps1.Id != null);
 
         test.startTest();
         NDIAChatterGroupController.getMyGroups();
