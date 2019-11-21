@@ -1,64 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 <types>
-<members>AssignNdiaPrimaryOwner</members>
-<members>forgotPassword</members>
-<members>loginForm</members>
-<members>NDIAAllFileView</members>
-
-<members>NDIAFileDownloadHistory</members>
-<members>NDIAFileUpload</members>
-<members>NDIAFileViewHistory</members>
-<members>ndiaImportantLinks</members>
-<members>ndiaLatestUpdatesAndLinks</members>
-<members>ndiaLinkUpdatesApp</members>
-<members>ndiaTrendingGroups</members>
-<members>RecallRequest</members>
-<members>selfRegister</members>
-<members>setExpId</members>
-<members>setStartUrl</members>
-<members>trendingAndMyGroups</members>
-<members>userRegistration</members>
-<name>AuraDefinitionBundle</name>
+<members>NDIACustomerMapping</members>
+<members>NDIAQuote_Submission_To_NDIA</members>
+<name>Flow</name>
 </types>
 <types>
-<members>NDIAChatterGrpTrigger</members>
-<members>NDIAQuoteTrigger</members>
-<members>NDIAUserTrigger</members>
-<name>ApexTrigger</name>
-</types>
-
-<types>
-<members>Quotation__c.Quotation_Approval</members>
-<name>ApprovalProcess</name>
-</types>
-  <types>
-  <members>Account</members>
-  <members>Quotation__c</members>
-  <name>Workflow</name>
+<members>Customer_State</members>
+<name>GlobalValueSet</name>
 </types>
 <types>
-  <members>Quotation__c.NDIAQuote_Submission_To_NDIA_Alert</members>
-  <name>WorkflowAlert</name>
+<members>NDIA_USER</members>
+<name>Group</name>
+</types>
+ <types>
+    <members>Quotation__c.View_only_Submitted_quotes__c</members>
+    <name>SharingReason</name>
+  </types>
+  <types>
+    <members>View_same_team_quote_customer_record</members>
+    <name>SharingSet</name>
+  </types>
+  <types>
+    <members>Admin</members>
+    <members>Collaboration</members>
+    
+  <members>Quotation</members>
+  <name>Profile</name>
+  </types>
+ <types>
+    <members>Knowledge__kav</members>
+   
+    <members>Quotation__c</members>
+   
+    <name>CustomTab</name>
+  </types>
+<types>
+<members>CollaborationGroup.NewGroupMember</members>
+  <members>CollaborationGroup.NewGroupRecord</members>
+      <members>Quotation__c.Assign_As_NDIA_Primary_Owner</members>
+  <members>Quotation__c.Recall_Request</members>
+  <members>Quotation__c.Update_Owner</members>
+  <members>Quotation__c.Upload_New_File</members>
+      <name>QuickAction</name>
 </types>
 <types>
-  <members>Quotation__c.Approval_Date</members>
-  <members>Quotation__c.Quote_Approved</members>
-  <members>Quotation__c.Quote_Recalled</members>
-  <members>Quotation__c.Quote_Rejected</members>
-  <members>Quotation__c.Quote_Submitted</members>
-  <name>WorkflowFieldUpdate</name>
+<members>Account-Customer Layout</members>
+<members>Account-SP Account Layout</members>
+<members>CollaborationGroup-Group Layout</members>
+<members>CommunityMemberLayout-Community Member Layout</members>
+<members>Knowledge__kav-Knowledge Layout</members>
+<members>Quotation__c-NDIA</members>
+<members>Quotation__c-Quotation Layout</members>
+<members>Quotation__c-SP%28Paid%29</members>
+<members>User-User Layout</members>
+<name>Layout</name>
 </types>
-<types>
-  <members>Account.test</members>
-  <name>WorkflowRule</name>
-</types>
-<types>
-<members>NDIA_Email_Templates</members>
-<members>NDIA_Email_Templates/NDIAQuote_Submission_To_NDIA</members>
-<members>NDIA_Email_Templates/NDIAQuote_Assigned_To_Primary_Owner</members>
-<name>EmailTemplate</name>
-</types>
-
-<version>47.0</version>
+ <version>47.0</version>
 </Package>
