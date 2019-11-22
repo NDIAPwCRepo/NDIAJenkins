@@ -38,7 +38,7 @@
 <members>SiteRegisterControllerTest</members>
 <name>ApexClass</name>
 </types>-->
-<types>
+<!--<types>
 <members>Account</members>
 <members>CollaborationGroup</members>
 <members>CollaborationGroupMember</members>
@@ -49,7 +49,7 @@
 <members>Site</members>
 <members>User</members>
 <name>CustomObject</name>
-</types>
+</types> -->
   <!--
 <types>
 <members>NDIAPublicGroupName</members>
@@ -236,5 +236,19 @@
 <members>ndiacommunityportal1</members>
 <name>SiteDotCom</name>
 </types>-->
+<types>
+<members>ndiacommunityportal</members>
+<members>testPartnerNida</members>
+<name>Network</name>
+</types>
+<types>
+<members>ndiacommunityportal</members>
+<members>testPartnerNida</members>
+<name>CustomSite</name>
+</types>
+<types>
+<members>ndiacommunityportal1</members>
+<name>SiteDotCom</name>
+</types>
 <version>47.0</version>
 </Package>
