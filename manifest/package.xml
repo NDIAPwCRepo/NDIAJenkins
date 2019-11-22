@@ -237,6 +237,16 @@
 <name>SiteDotCom</name>
 </types>-->
 <types>
+<members>Admin</members>
+<members>Analytics Cloud Integration User</members>
+<members>Analytics Cloud Security User</members>
+<members>Collaboration</members>
+<members>Customer Community Plus Login User</members>
+<members>NDIAUser</members>
+<members>Quotation</members>
+<name>Profile</name>
+</types>
+<types>
 <members>ndiacommunityportal</members>
 <name>Network</name>
 </types>
