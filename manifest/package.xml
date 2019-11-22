@@ -238,12 +238,10 @@
 </types>-->
 <types>
 <members>ndiacommunityportal</members>
-<members>testPartnerNida</members>
 <name>Network</name>
 </types>
 <types>
 <members>ndiacommunityportal</members>
-<members>testPartnerNida</members>
 <name>CustomSite</name>
 </types>
 <types>
