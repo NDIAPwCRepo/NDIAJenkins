@@ -73,10 +73,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>LightningSelfRegisterControllerTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>NDIAChatterGroupController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
