@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDIAMakeAddressMandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+$RecordType.Name = &quot;Customer&quot;,
+OR(
+ISBLANK(BillingStreet),
+ISBLANK(BillingCity), 
+ISBLANK(BillingState), 
+ISBLANK(BillingPostalCode),
+ISBLANK(BillingCountry)
+)
+)</errorConditionFormula>
+    <errorMessage>Complete Address is mandatory for creating customers.</errorMessage>
+</ValidationRule>

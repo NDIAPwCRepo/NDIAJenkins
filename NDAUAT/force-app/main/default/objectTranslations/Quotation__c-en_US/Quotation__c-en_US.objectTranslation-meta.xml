@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quotation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quotations</value>
+    </caseValues>
+    <layouts>
+        <layout>NDIA</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Quotation Information --></label>
+            <section>Quotation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Weekly Amounts --></label>
+            <section>Weekly Amounts</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quotation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Quotation Information --></label>
+            <section>Quotation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Weekly Amounts --></label>
+            <section>Weekly Amounts</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SP(Paid)</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Quotation Information --></label>
+            <section>Quotation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Weekly Amounts --></label>
+            <section>Weekly Amounts</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Assign As NDIA Primary Owner --></label>
+        <name>Assign_As_NDIA_Primary_Owner</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Archive Quotes --></label>
+        <name>NDIAArchive_Quotes</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Recall Request --></label>
+        <name>Recall_Request</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit For Approval --></label>
+        <name>Submit_For_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Owner --></label>
+        <name>Update_Owner</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Upload New File --></label>
+        <name>Upload_New_File</name>
+    </quickActions>
+    <sharingReasons>
+        <label><!-- View only Submitted quotes --></label>
+        <name>View_only_Submitted_quotes</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Caution : You have entered an amount above 5% --></errorMessage>
+        <name>Indexation_Less_Than_5</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Stage can only be manually updated from &apos;In progress&apos; to &apos;Final&apos; or &apos;Archive&apos; --></errorMessage>
+        <name>NDIAAllowInProgressToFinal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Stage cant be manually updated once it has reached final. Quote can only be &apos;Archived&apos; --></errorMessage>
+        <name>NDIAAllowManualStageUpdateFinal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Stage can only be manually updated from &apos;Not Yet Commenced&apos; to &apos;In progress&apos; or &apos;Archive&apos; --></errorMessage>
+        <name>NDIAAllowNotYetCommToInProgress</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Stage can only be manually updated from &apos;Recall&apos; to &apos;Submitted&apos; or &apos;Archive&apos; --></errorMessage>
+        <name>NDIAAllowRecallToSubmitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- stage can be manually updated from &apos;Rejected&apos; to only &apos;Submitted&apos; or &apos;Archive&apos; --></errorMessage>
+        <name>NDIAAllowRejectedToSubmitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Stage can be manually updated from &apos;Submitted&apos; to &apos;Recall / Rejected / Approved&apos; or &apos;Archive&apos; --></errorMessage>
+        <name>NDIARestrictionOnSubmission</name>
+    </validationRules>
+</CustomObjectTranslation>

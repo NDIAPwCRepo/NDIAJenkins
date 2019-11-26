@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <description><!-- This record type will be used to create customer records by the NDIA users --></description>
+        <label><!-- Customer --></label>
+        <name>Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This layout will be used for creation of SP user&apos;s contact Account --></description>
+        <label><!-- SP Account --></label>
+        <name>SP_Account</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Complete Address is mandatory for creating customers. --></errorMessage>
+        <name>NDIAMakeAddressMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide NDIS Number for NDIS participant --></errorMessage>
+        <name>NDIANDISNumberPopulated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Postal Code Should be equal to or less than 4 digits --></errorMessage>
+        <name>NDIAPostal_Code_Not_Greater_Than_4_Dig</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map_Accounts --></label>
+        <name>FN__Map_Accounts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GMI_Show_Map_Button_Account --></label>
+        <name>GMI_Show_Map_Button_Account</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GMI_Show_Map_Link_Account --></label>
+        <name>GMI_Show_Map_Link_Account</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDIAAllowInProgressToFinal</fullName>
+    <active>true</active>
+    <description>Allow from &#39;In progress&#39; to &#39;Final&#39; or &#39;Archive&#39;</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;In progress&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Recall&quot;) 
+)  ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;In progress&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Submitted&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;In progress&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Approval In Progress&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;In progress&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Approved&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;In progress&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Rejected&quot;) 
+) ||
+AND(
+ISPICKVAL(PRIORVALUE(NDIAQuoteStage__c), &quot;In progress&quot;),
+ISPICKVAL(NDIAQuoteStage__c, &quot;Not yet commenced&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>NDIAQuoteStage__c</errorDisplayField>
+    <errorMessage>Stage can only be manually updated from &#39;In progress&#39; to &#39;Final&#39; or &#39;Archive&#39;</errorMessage>
+</ValidationRule>

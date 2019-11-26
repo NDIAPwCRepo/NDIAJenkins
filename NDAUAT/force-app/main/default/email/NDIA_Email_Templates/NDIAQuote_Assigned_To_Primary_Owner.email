@@ -1,0 +1,10 @@
+Hi {!Quotation__c.NDIA_Primary_Owner__c},
+
+Regarding Quote : {!Quotation__c.Id}
+
+Please note that {!Quotation__c.OwnerFullName} from the NDIA has been assigned to you. To track progress, please log in to Manage My Quotes via the Provider Community:
+
+{!Community_Url}
+
+Kind Regards,
+Provider Community Team
