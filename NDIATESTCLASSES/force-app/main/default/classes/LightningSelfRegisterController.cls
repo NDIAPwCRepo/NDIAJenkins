@@ -52,7 +52,7 @@ global without sharing class  LightningSelfRegisterController {
             u.LastName = lastname;
             if(!String.isBlank(ContactNumber))
                 u.Phone=ContactNumber;
-            //   u.NDIA_PaidRequest__c=PaidReq;
+          //     u.NDIA_PaidRequest__c=PaidReq;
             u.CommunityNickname=firstname+' '+lastname;
             String networkId = Network.getNetworkId();
              System.debug('@@varun@@@@@@@'+u);

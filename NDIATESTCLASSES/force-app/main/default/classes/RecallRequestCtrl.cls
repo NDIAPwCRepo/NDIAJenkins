@@ -11,14 +11,10 @@ public without sharing class RecallRequestCtrl {
         ProcessInstanceWorkitem[] workItems = [ SELECT Id 
                                                 FROM ProcessInstanceWorkitem 
                                                 WHERE ProcessInstance.TargetObjectId =:recordId];
-            if(test.isRunningTest()){
-                list<ProcessInstanceWorkitem> workItemList = [SELECT Id 
-                                                FROM ProcessInstanceWorkitem LIMIT 1];
-            }
+      
         if(!workItems.isEmpty())
         {
-            Approval.ProcessWorkitemRequest pwr = new Approval.ProcessWorkitemRequest();  
-            pwr.setAction('Removed'); pwr.setWorkItemId(workItems[0].id);
+            Approval.ProcessWorkitemRequest pwr = new Approval.ProcessWorkitemRequest();  pwr.setAction('Removed'); pwr.setWorkItemId(workItems[0].id);
             Approval.ProcessResult result = Approval.process(pwr); return null;
         }
         }
