@@ -36,7 +36,7 @@
 <members>NDIAChatterGrpTriggerHandlerTest</members>
 <members>NDIAFileUploadControllerTest</members>
 <members>NDIAFileViewControllerTest</members>
-<members>NDIAQuoteTriggerHandlerTest</members>
+<members>NDIAQuoteTriggerTest</members>
 <members>NDIAUserTriggerHandlerTest</members>
 <members>NDIARecallRequestCtrlTest</members>
 <members>SiteLoginControllerTest</members>
