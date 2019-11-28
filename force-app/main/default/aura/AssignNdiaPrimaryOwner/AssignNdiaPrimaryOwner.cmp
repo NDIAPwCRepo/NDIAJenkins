@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="AssignNdiaPrimaryOwnerCtrl" >
+	 <lightning:layout horizontalAlign="center">
+<lightning:layoutItem size="4">
+ <b>Do you want to be the Reviewer? </b>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="2">
+            <lightning:button variant="brand" label="Yes" title="Brand action" onclick="{!c.handleSaveRecord}" />
+        </lightning:layoutItem>
+        <lightning:layoutItem size="2">
+            <lightning:button variant="brand" label="No" title="Brand action" onclick="{!c.CancelUpdate}" />
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>
