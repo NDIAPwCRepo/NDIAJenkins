@@ -52,44 +52,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>FN__Mapping_Status__c</picklist>
-        <values>
-            <fullName>Bad Google Key</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Google Exhausted</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Located</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Not Located Yet</fullName>
-            <default>true</default>
-        </values>
-        <values>
-            <fullName>Problem with Address</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>FN__Which_Address__c</picklist>
-        <values>
-            <fullName>Billing</fullName>
-            <default>true</default>
-        </values>
-        <values>
-            <fullName>Do Not Map</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Shipping</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Industry</picklist>
         <values>
             <fullName>Agriculture</fullName>

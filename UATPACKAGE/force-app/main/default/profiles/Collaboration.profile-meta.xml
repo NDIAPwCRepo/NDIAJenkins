@@ -191,41 +191,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.EDY_ORGCUSTOM__DB__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.EDY_ORGCUSTOM__Old_Name__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.FN__Find_Nearby__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.FN__Lat__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.FN__Lon__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.FN__Mapping_Status__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.FN__Which_Address__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Fax</field>
         <readable>true</readable>
@@ -279,16 +244,6 @@
         <editable>true</editable>
         <field>Account.NumberOfEmployees</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.ORGCUSTOM4_DB__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.ORGCUSTOM4_OLD_NAME__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -402,21 +357,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Case.EDY_ORGCUSTOM__DB__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.EDY_ORGCUSTOM__Old_Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.EDY_ORGCUSTOM__Old_Subject__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Case.IsClosedOnCreate</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -424,16 +364,6 @@
         <editable>false</editable>
         <field>Case.IsEscalated</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.ORGCUSTOM4_DB__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Org_Cust_Case_ID__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -455,11 +385,13 @@
         <field>Case.Reason</field>
         <readable>true</readable>
     </fieldPermissions>
+   <!--
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.SourceId</field>
         <readable>true</readable>
     </fieldPermissions>
+    -->
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Subject</field>
@@ -576,39 +508,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>User.EDY_ORGCUSTOM__DB__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>User.EDY_ORGCUSTOM__Old_First_Name__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>User.EDY_ORGCUSTOM__Old_Last_Name__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>User.NDIA_PaidRequest__c</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>User.ORGCUSTOM4_DB__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>User.ORGCUSTOM4_OLD_FIRST_NAME__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>User.ORGCUSTOM4_OLD_LAST_NAME__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <flowAccesses>
         <enabled>false</enabled>
