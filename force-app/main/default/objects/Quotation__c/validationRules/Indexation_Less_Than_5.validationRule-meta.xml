@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Indexation_Less_Than_5</fullName>
+    <active>false</active>
+    <description>Indexation should be less than 5 %</description>
+    <errorConditionFormula>NDIAIndexation__c &gt; 5.00</errorConditionFormula>
+    <errorMessage>Caution : You have entered an amount above 5%</errorMessage>
+</ValidationRule>

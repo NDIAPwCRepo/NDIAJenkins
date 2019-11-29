@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>NDIAPublicGroupName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NDIAPublicGroupName</shortDescription>
+        <value>NDIA_USER</value>
+    </labels>
+    <labels>
+        <fullName>QuotationApproveStage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuotationApproveStage</shortDescription>
+        <value>Submitted</value>
+    </labels>
+    <labels>
+        <fullName>SpAccountRecordTypeName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SpAccountRecordTypeName</shortDescription>
+        <value>SP Account</value>
+    </labels>
+    <labels>
+        <fullName>SpUserAccountOwnerId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SpUserAccountOwnerId</shortDescription>
+        <value>005P0000001kQp7</value>
+    </labels>
+    <labels>
+        <fullName>SpUserFreeProfileName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SpUserFreeProfileName</shortDescription>
+        <value>Collaboration</value>
+    </labels>
+</CustomLabels>
