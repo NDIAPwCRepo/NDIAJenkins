@@ -1,0 +1,7 @@
+Hey {!Quotation__c.OwnerFullName}
+
+This mail is to notify you that the quote no : {!Quotation__c.Name}  owned by you has it's plan end date coming in next 8 weeks.
+This is a reminder mail to submit your quote asap.
+
+ Best Regards
+NDIA Team

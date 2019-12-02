@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Quotes</fullName>
+    <columns>NAME</columns>
+    <columns>NDIAApprovalDate__c</columns>
+    <columns>NDIAAccount__c</columns>
+    <columns>NDIA_Primary_Owner__c</columns>
+    <columns>NDIANDIS_Number__c</columns>
+    <columns>NDIAQuoteStage__c</columns>
+    <columns>NDIAQuoteType__c</columns>
+    <columns>NDIAQuotePlanEndDate__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Quotes</label>
+</ListView>

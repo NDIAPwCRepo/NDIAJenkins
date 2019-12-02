@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Quotation__c</entityName>
+    <fieldName>NDIAQuoteStage__c</fieldName>
+    <masterLabel>Quotation Status Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial, Helvetica, sans-serif;&quot;&gt;Stage cant be manually updated once it has reached final. Quote can only be &amp;#39;Archived&amp;#39;&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Final</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial, Helvetica, sans-serif;&quot;&gt;Stage can only be manually updated from &amp;#39;In progress&amp;#39; to &amp;#39;Final&amp;#39; or &amp;#39;Archive&amp;#39;&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>In progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Quote is created by SP user. &lt;span style=&quot;font-size: 12px; font-family: Arial, Helvetica, sans-serif;&quot;&gt;Stage can only be manually updated from &amp;#39;Not Yet Commenced&amp;#39; to &amp;#39;In progress&amp;#39; or &amp;#39;Archive&amp;#39;&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Not yet commenced</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial, Helvetica, sans-serif;&quot;&gt;Stage can only be manually updated from &amp;#39;Recall&amp;#39; to &amp;#39;Submitted&amp;#39; or &amp;#39;Archive&amp;#39;&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Recall</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial, Helvetica, sans-serif;&quot;&gt;stage can be manually updated from &amp;#39;Rejected&amp;#39; to only &amp;#39;Submitted&amp;#39; or &amp;#39;Archive&amp;#39;&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Rejected</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;To submit the quote please add all the mandatory data:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;NDIS number&lt;/li&gt;&lt;li&gt;NDIS participant check true&lt;/li&gt;&lt;li&gt;Mandatory documents&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Also, &lt;/span&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial, Helvetica, sans-serif;&quot;&gt;Stage can only be manually updated from &amp;#39;Submitted&amp;#39; to &amp;#39;Recall / Rejected / Approved&amp;#39; or &amp;#39;Archive&amp;#39;&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Submitted</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

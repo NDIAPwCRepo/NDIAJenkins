@@ -1,0 +1,24 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="NDIACommLatestUpdatesController"
+    access="global">
+
+    <!-- attributes for displaying important links -->
+    <aura:attribute name="importantLinks" type="List" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <!--displaying important links -->
+    <div class="slds-box">
+        <h1 class="header-bg"> <b style="margin-left:10px;">Important Links </b></h1>
+        <aura:iteration items="{!v.importantLinks}" var="impLinks">
+            <div class="slds-var-m-around_small">
+                <div style="width:300px">
+                    <h3 class="slds-tile__title slds-truncate">
+                        <a href="{!impLinks.NDIAUrl__c}" target="_blank">{!impLinks.Title}</a>
+
+                    </h3>
+                </div>
+            </div>
+        </aura:iteration>
+    </div>
+
+</aura:component>
