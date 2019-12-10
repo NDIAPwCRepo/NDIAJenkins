@@ -6,7 +6,7 @@
 <members>CollaborationGroupMember</members>
 <members>Knowledge__kav</members>
 <members>NDIATriggerSwitch__c</members>
-<members>Quotation__c</members>
+<members>Quotation__c</members>7
 <name>CustomObject</name>
 </types>
 <types>
@@ -266,6 +266,7 @@
 	<name>Flow</name>
 </types>
 
+
  <types>
   <members>ndiacommunityportal</members>
     <name>CustomSite</name>
@@ -328,6 +329,6 @@
     <members>ndiacommunityportal.Partner_and_Customer_members</members>
     <name>UserCriteria</name>
   </types>
-  
+
 <version>46.0</version>
 </Package>

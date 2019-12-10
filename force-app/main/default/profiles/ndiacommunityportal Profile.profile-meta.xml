@@ -357,6 +357,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Quotation__c.NDIAPartcipantName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Quotation__c.NDIAQuotePlanEndDate__c</field>
         <readable>false</readable>
     </fieldPermissions>

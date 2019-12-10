@@ -35,7 +35,7 @@
             <type>SalesforceObject</type>
         </navigationMenuItem>
         <navigationMenuItem>
-            <defaultListViewId>My_Quotes</defaultListViewId>
+            <defaultListViewId>All</defaultListViewId>
             <label>Manage My Quotes</label>
             <position>2</position>
             <publiclyAvailable>false</publiclyAvailable>

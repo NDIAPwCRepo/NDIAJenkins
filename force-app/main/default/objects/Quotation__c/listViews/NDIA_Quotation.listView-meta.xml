@@ -2,6 +2,7 @@
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>NDIA_Quotation</fullName>
     <columns>NAME</columns>
+    <columns>NDIAPartcipantName__c</columns>
     <columns>NDIAAccount__c</columns>
     <columns>NDIA_Primary_Owner__c</columns>
     <columns>NDIANDIS_Number__c</columns>
@@ -11,7 +12,4 @@
     <filterScope>Queue</filterScope>
     <label>NDIA</label>
     <queue>NDIA</queue>
-    <sharedTo>
-        <allInternalUsers/>
-    </sharedTo>
 </ListView>

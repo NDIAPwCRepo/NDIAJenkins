@@ -67,7 +67,7 @@
                 <table>
                     <tr>
                         <td>
-                            <span class="slds-form-element__label" style="color: white;font-size: 22px;">
+                           <span class="slds-form-element__label" style="color: white !important; font-size: 18px;">
                                 Request Full Access
                             </span>
                         </td>
