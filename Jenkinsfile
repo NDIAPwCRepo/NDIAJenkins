@@ -44,7 +44,7 @@ node {
 			}else{
 			   //rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
 			  // rmsg = bat returnStdout: true, script: "\"C:\\Program Files\\Salesforce CLI\\bin\\sfdx\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
-				 rmsg = bat returnStdout: true, script: "\"C:\\Program Files\\Salesforce CLI\\bin\\sfdx\" sfdx force:source:push -u ${HUB_ORG}"
+				 rmsg = bat returnStdout: true, script: "\"C:\\Program Files\\Salesforce CLI\\bin\\sfdx\" force:source:push -u ${HUB_ORG}"
 			}
 			  
             printf rmsg
