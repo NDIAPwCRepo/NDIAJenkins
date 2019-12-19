@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Assign To NDIA Queue</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>NDIA_Support_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <template>NDIA_Email_Templates/NDIANewCaseAssignmentNotificationEmail</template>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

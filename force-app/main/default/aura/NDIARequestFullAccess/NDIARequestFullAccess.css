@@ -1,0 +1,13 @@
+.THIS .check {
+    color: white;
+}
+.THIS .slds-modal__container{
+    max-width: 70rem !important;
+    width:50% !important;
+    margin-top: 40px !important;
+}
+.THIS .img{
+    display: block;
+    margin: auto;
+    width: 40%;
+}

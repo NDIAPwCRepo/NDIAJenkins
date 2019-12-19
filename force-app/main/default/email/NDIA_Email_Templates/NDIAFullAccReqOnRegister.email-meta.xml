@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Request For Full NDIA Community Portal Access</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FullAccReqOnRegister</name>
+    <style>none</style>
+    <subject>Provider Community Full Access Request On Registration</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,228 @@
+<!-- paid access component -->
+<aura:component
+                implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes"
+                controller="NDIAFullAccessRequestController" access="global">
+    
+    <aura:attribute name="isModalOpen" type="boolean" default="false" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:attribute name="isBoxChecked" type="boolean" default="false" />
+    <aura:attribute name="disabled" type="boolean" default="false" />
+    <aura:attribute name="userObj" type="User" default="{'sobjectType' : 'User', 
+                                                        'NDIAFullAccessRequest__c' : ''}"/>
+    
+    <aura:handler name="init" value="{!c.doInit}" action="{!this}" />
+    <div class="slds-align_absolute-center">
+        <h3 style="color: #DD9B04; font-size: 24px; margin-bottom:10px;"><b>Is it hectic to manage all quotes and their progress?</b></h3>
+      
+    </div>
+      <div class="slds-align_absolute-center">
+ 
+    <h3 style="color: #DD9B04; font-size: 16px; margin-bottom:30px;">We've all been there. Provider community portal with easy-to-use UI
+     will allow you to manage your customers and quotes in an efficient way.</h3>
+    </div>
+     <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_1-of-4">
+            <div class="slds-paid-service-container">
+                <article class="slds-card">
+                    
+                    <footer class="slds-card__footer" style="background: #D04A02;">
+                        <ul style="text-align: center;">
+                            <b>
+                                <li>CUSTOMER MANAGEMENT</li> 
+                            </b>
+                        </ul>
+                    </footer>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <div class="slds-card-img-container">
+                        <img src="{!$Resource.PortalImages}" style=" max-width: 100%;
+    height: 257px;" /> 
+                        </div>
+                    </div>
+                    <footer class="slds-card__footer" style="background: #D04A02;">
+                        <ul style="text-align: left;">
+                            <b>
+                                <li>Access customers created by service providers in one go and see
+                                their related quote and document data.</li> 
+                            </b>
+                        </ul>
+                    </footer>
+                </article>
+            </div>
+            
+        </div>
+        
+        <div class="slds-col slds-size_1-of-4">
+            <div class="slds-paid-service-container">
+                <article class="slds-card">
+                    <footer class="slds-card__footer" style="background: #EB8C00;">
+                        <ul style="text-align: center;">
+                            <b>
+                                    <li>QUOTATION MANAGEMENT</li> 
+                            </b>
+                        </ul>
+                    </footer>  <div class="slds-card__body slds-card__body_inner">
+                    <div class="slds-card-img-container">
+                       <img src="{!$Resource.doc1}" style=" max-width: 100%;
+    height: 257px;" /> 
+                    </div>
+                    </div>
+                    <footer class="slds-card__footer" style="background: #EB8C00;">
+                        <ul style="text-align: left;">
+                            <b>
+                                <li>See all quotes for customers,add quotation amount and see their progress after submitting them for approval.</li>
+                                
+                            </b>
+                        </ul>
+                    </footer>
+                </article>
+            </div>
+            
+        </div>
+        
+        <div class="slds-col slds-size_1-of-4">
+            <div class="slds-paid-service-container">
+                <article class="slds-card">
+                    <footer class="slds-card__footer" style="background: #D04A02;">
+                        <ul style="text-align: center;">
+                            <b>
+                                <li>DOCUMENT MANAGEMENT</li> 
+                            </b>
+                        </ul>
+                    </footer>  <div class="slds-card__body slds-card__body_inner">
+                    <div class="slds-card-img-container">  
+                        <img src="{!$Resource.document}" style=" max-width: 100%;
+    height: 257px;" /> 
+                    </div>
+                    </div> 
+                    <footer class="slds-card__footer" style="background: #D04A02;">
+                        <ul style="text-align: left;">
+                            <b>
+                                <li>View all documents uploaded by service providers of any types and access their real time usage</li>
+                            </b>
+                        </ul>
+                    </footer>
+                </article>
+            </div>
+            
+            
+        </div>
+
+        <div class="slds-col slds-size_1-of-4">
+                <div class="slds-paid-service-container">
+                    <article class="slds-card">
+                        <footer class="slds-card__footer" style="background: #EB8C00;">
+                            <ul style="text-align: center;">
+                                <b>
+                                    <li> COLLABORATION MANAGEMENT </li> 
+                                </b>
+                            </ul>
+                        </footer>  <div class="slds-card__body slds-card__body_inner">
+                        <div class="slds-card-img-container">  
+                            <img src="{!$Resource.Collaboration}" style=" max-width: 100%;
+        height: 257px;" /> 
+                        </div>
+                        </div> 
+                        <footer class="slds-card__footer" style="background: #EB8C00;">
+                            <ul style="text-align: left;">
+                                <b>
+                                    <li>View or share all the information, latest posts, Updates and Announcements among specific 
+                                            group members</li>
+                                </b>
+                            </ul>
+                        </footer>
+                    </article>
+                </div>
+                
+                
+            </div>
+    </div> 
+
+   
+    <!-- <div class="slds-size_4-of-4">
+        <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+        <lightning:carousel disableAutoRefresh="false" disableAutoScroll="true">
+                
+            <lightning:carouselImage src="{!$Resource.PortalImages}" header = "Customer Management"
+                                description = "Access customers created by service providers in one go and see
+                                their related quote and document data" style="max-width:25%; margin:auto"/>
+                                
+            <lightning:carouselImage src="{!$Resource.doc1}" header = "Quotation Management"
+                            description = "See all quotes for customers,add quotation amount and see their 
+                            progress after submitting them for approval" style="max-width:25%; margin:auto"/> 
+                            
+            <lightning:carouselImage src="{!$Resource.document}" header = "Document Management"
+                            description = "View all documents uploaded by service providers and access their
+                             real time usage" style="max-width:25%; margin:auto"/> 
+                             
+            <lightning:carouselImage src="{!$Resource.Collaboration}" header = "Collaboration Management"
+                             description = "View/share all the info, post and Updates among specific 
+                            group members" style="max-width:25%; margin:auto"/>
+            
+
+        </lightning:carousel>
+    </div>
+    </div> -->
+
+    <div class="slds-grid ">
+        <div class="slds-col">
+            <table style="width: 50%; table-layout: fixed; margin:40px auto; border:1px solid #DD9B04; padding:20px;">
+                <tr>
+                    <aura:if isTrue="{!v.disabled}">
+                        <td style="width: 145px; padding:10px;">
+                            <span class="slds-form-element__label" style="color: #fff;font-size: 22px;">
+                               We have already received your request to join.
+                                <br></br>You'll get notifed when it is approved.
+                            </span>
+                        </td>
+                        <aura:set attribute="else">
+                            <td style="width: 160px; padding:10px;">
+                                <span class="slds-form-element__label" style="color: #fff;font-size: 22px;">
+                                 Ready to get started ?
+                                </span>
+                            </td>
+                            <td style="text-align: left; width:5px;padding-right:41px;">
+                                <b>
+                                <button class="slds-button slds-button_neutral" style="background: #EB8C00; color:black; height:38px;width:113px;"  disabled="{!v.disabled}" aura:id="PaidUserRequest" value="{!v.disabled}"
+                                                 onclick="{!c.openModelPopUp}" checked="{!v.isBoxChecked}">Intrested?</button>
+                                </b>
+                                <!-- <Span>Yes</Span> -->
+                            </td>
+                        </aura:set>
+                    </aura:if>
+                    
+                </tr>
+            </table>
+            
+        </div>
+        <!--Use aura:if tag to display/hide popup based on openModelPopUp value -->
+        <aura:if isTrue="{!v.isModalOpen}">
+            
+            <div class="modal-dialog">
+                <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                         aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                        <!-- Modal/Popup Box Header Starts here-->
+                        <header class="slds-modal__header" style="color:#DD9B04;background-color:grey;">
+                            <lightning:buttonIcon iconName="utility:close" onclick="{! c.closeModel }"
+                                                  alternativeText="close" variant="bare-inverse" class="slds-modal__close" />
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Are You Sure ?
+                            </h2>
+                        </header>
+                        <!--Modal/Popup Box Body Starts here-->
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1"
+                             style="text-align:center">
+                            <lightning:button variant="brand" label="Ok" title="Ok" onclick="{!c.handleFullAccess}" />
+                            <lightning:button variant="neutral" label="Cancel" title="Cancel"
+                                              onclick="{! c.closeModel }" />
+                            
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        </aura:if>
+    </div>
+    
+</aura:component>

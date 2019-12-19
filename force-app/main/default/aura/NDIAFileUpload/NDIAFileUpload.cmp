@@ -1,0 +1,49 @@
+<!--***************************Mukul Mishra 13-11-2019***********************************
+This component is written to allow the SP users to upload documents with respect to quote
+****************************************documentId***********************************************-->
+
+<aura:component controller="NDIAFileUploadController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >  
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:attribute name="files" type="ContentDocument[]"/>  
+    <aura:attribute name="recordId" type="string" default="0010K00001yb8ycQAA"/>  
+    <aura:attribute name="description" type="string"/>  
+     <aura:attribute name="documentId" type="string"/>  
+    
+    <aura:attribute name="name" type="string"/> 
+    <aura:attribute name="accept" type="List" default="['.jpg', '.jpeg','.pdf','.csv','.xlsx']"/>  
+    <aura:attribute name="multiple" type="Boolean" default="true"/>      
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+   
+     <div class="slds-grid">  
+                <div style="width:100%">  
+                    <div class="slds-form slds-form_stacked slds-m-around_x-small">
+                       
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="input-id-02">Description:</label>
+                            <div class="slds-form-element__control">
+                                <lightning:textarea name="description" value="{!v.description}"/>
+                            </div>
+                        </div>
+                        <div class="slds-form-element">
+                            <lightning:fileUpload label="" multiple="{!v.multiple}"   
+                                                  accept="{!v.accept}" recordId="{!v.recordId}"   
+                                                  onuploadfinished="{!c.UploadFinished}" /> 
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>  
+            </div><br/> 
+            <div class="slds-form--compound" style="position:relative">
+                <aura:if isTrue="{!v.Spinner}">
+                    <div class="slds-spinner_container">
+                        <div class="slds-spinner slds-spinner--medium" aria-hidden="false" role="alert">
+                            <div class="slds-spinner__dot-a"></div>
+                            <div class="slds-spinner__dot-b"></div>
+                        </div>
+                    </div>
+                </aura:if>
+            </div>
+     
+</aura:component>
