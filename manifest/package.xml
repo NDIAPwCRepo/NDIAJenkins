@@ -337,33 +337,33 @@
 <members>PwC_Outline_Logo_White1</members>
 <name>ContentAsset</name> 
 </types> -->
- <!-- <types>
+<!-- <types>
     <members>ndiacommunityportal.Banned</members>
     <name>KeywordList</name>
   </types> -->
-  <!-- <types>
+ <!-- <types>
     <members>ndiacommunityportal</members>
     <members>ndiacommunityportal</members>
     <name>ManagedTopics</name>
-  </types> -->
-  <!-- <types>
+  </types> 
+ <types>
   <members>cbndiacommunityportal</members>
     <name>NetworkBranding</name>
-    </types> -->
-    <!-- <types>
+    </types> 
+<types>
     <members>ndiacommunityportal.Block_banned_keywords</members>
     <members>ndiacommunityportal.Flag_banned</members>
     <members>ndiacommunityportal.Freeze_for_frequent_posting</members>
     <members>ndiacommunityportal.Replace_banned</members>
     <members>ndiacommunityportal.Review_the_first_post</members>
     <name>ModerationRule</name>
-  </types> -->
+  </types> 
    <types>
     <members>ndiacommunityportal.Customer_Members</members>
     <members>ndiacommunityportal.Members_without_contribution</members>
     <members>ndiacommunityportal.Partner_and_Customer_members</members>
     <name>UserCriteria</name>
-  </types>
+  </types> -->
 
 <version>46.0</version>
 </Package>
